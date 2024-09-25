@@ -18,6 +18,7 @@ import com.example.finalapplication.widgets.recyclerview.RecyclerViewActivity
 import com.example.finalapplication.widgets.spinner.SpinnerActivity
 import com.example.finalapplication.widgets.spinner.TwoSpinnerActivity
 import com.example.finalapplication.widgets.switchs.SwitchActivity
+import com.example.finalapplication.widgets.timepicker.TimePickerActivity
 import com.example.finalapplication.widgets.togglebutton.ToggleButtonActivity
 
 class MainActivity : AppCompatActivity() {
@@ -112,6 +113,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnRecyclerViewTodo.setOnClickListener {
             Intent(this, RecyclerViewActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnTimePicker.setOnClickListener {
+            Intent(this, TimePickerActivity::class.java).also {
                 startActivity(it)
             }
         }
