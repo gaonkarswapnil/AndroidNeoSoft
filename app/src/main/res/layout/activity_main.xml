@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnActivityLifeCycle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Activity LifeCycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTwoActivityInteraction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Activity Interaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnActivityLifeCycle" />
+
+        <Button
+            android:id="@+id/btnFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTwoActivityInteraction" />
+
+        <Button
+            android:id="@+id/btnFragmentLifeCycle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fragment Life Cycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragment" />
+
+        <Button
+            android:id="@+id/btnBasicSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Basic Spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragmentLifeCycle" />
+
+        <Button
+            android:id="@+id/btnTwoSpinnerActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Interactive Spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnBasicSpinner" />
+
+        <Button
+            android:id="@+id/btnToggleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Simple Toggle Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTwoSpinnerActivity" />
+
+        <Button
+            android:id="@+id/btnSwitchSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Switch Slider(Toggle Button)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnToggleButton" />
+
+        <Button
+            android:id="@+id/btnToolBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSwitchSlider" />
+
+        <Button
+            android:id="@+id/btnAlertDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alert Dialog Box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnToolBar" />
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date Picker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog" />
+
+        <Button
+            android:id="@+id/btnDateDifference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date Difference"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDatePicker" />
+
+        <Button
+            android:id="@+id/btnCustomDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom Dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDateDifference" />
+
+        <Button
+            android:id="@+id/btnRecyclerViewTodo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView Todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCustomDialog" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

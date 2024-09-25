@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".widgets.datepicker.DateDifferenceActivity">
+
+    <Button
+        android:id="@+id/btnFirstDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Date"
+        app:layout_constraintBottom_toTopOf="@+id/txtFirstDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFirstDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Date"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstDate" />
+
+    <Button
+        android:id="@+id/btnSecondDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Date"
+        app:layout_constraintBottom_toTopOf="@+id/tvDateDifference"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstDate" />
+
+    <TextView
+        android:id="@+id/tvDateDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Date"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecondDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

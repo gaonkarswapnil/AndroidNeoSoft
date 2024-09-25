@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".widgets.recyclerview.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.customdialog.CustomDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.datepicker.DateDifferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.datepicker.DatePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.alertdialog.AlertDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".toolbarmenu.ToolBarMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.switchs.SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.togglebutton.ToggleButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.spinner.TwoSpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.spinner.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentlifecycle.FragmentLifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".twoactivityinteraction.SecondActivityLifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".twoactivityinteraction.FirstActivityLifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitylifecycle.ActivityLifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
