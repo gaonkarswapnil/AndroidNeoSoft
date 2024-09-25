@@ -12,6 +12,7 @@ import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
 import com.example.finalapplication.widgets.alertdialog.AlertDialogActivity
 import com.example.finalapplication.widgets.customdialog.CustomDialogActivity
+import com.example.finalapplication.widgets.dateandtime.DateAndTimeActivity
 import com.example.finalapplication.widgets.datepicker.DateDifferenceActivity
 import com.example.finalapplication.widgets.datepicker.DatePickerActivity
 import com.example.finalapplication.widgets.recyclerview.RecyclerViewActivity
@@ -119,6 +120,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnTimePicker.setOnClickListener {
             Intent(this, TimePickerActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnDateAndTimePicker.setOnClickListener {
+            Intent(this, DateAndTimeActivity::class.java).also {
                 startActivity(it)
             }
         }

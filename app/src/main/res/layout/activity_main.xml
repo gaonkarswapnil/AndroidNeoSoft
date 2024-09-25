@@ -156,13 +156,23 @@
 
         <Button
             android:id="@+id/btnTimePicker"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Time Picker Dialog"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnRecyclerViewTodo" />
+
+        <Button
+            android:id="@+id/btnDateAndTimePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
