@@ -41,7 +41,6 @@ class RecyclerViewActivity : AppCompatActivity() {
             binding.edToDo.setText("")
 //            adapter.notifyDataSetChanged()
             adapter.notifyItemInserted(todoList.size-1)
-
         }
     }
 }

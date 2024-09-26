@@ -10,8 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".bottomtoolbarmenu.BottomToolBarMenuActivity"
+            android:exported="false" />
         <activity
             android:name=".widgets.dateandtime.DateAndTimeActivity"
             android:exported="false" />

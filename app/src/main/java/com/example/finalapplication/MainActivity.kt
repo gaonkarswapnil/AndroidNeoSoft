@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalapplication.activitylifecycle.ActivityLifeCycleActivity
+import com.example.finalapplication.bottomtoolbarmenu.BottomToolBarMenuActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
@@ -126,6 +127,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnDateAndTimePicker.setOnClickListener {
             Intent(this, DateAndTimeActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnBottomNavigationMenu.setOnClickListener {
+            Intent(this, BottomToolBarMenuActivity::class.java).also {
                 startActivity(it)
             }
         }

@@ -77,6 +77,11 @@ class AlertDialogActivity : AppCompatActivity() {
             .setTitle("Close Activity")
             .setIcon(R.drawable.ic_exit_activity)
             .setMessage("Do you want to Exit??")
+            .setPositiveButton("Yes"){ _, _ ->
+                finish()
+            }.setNegativeButton("No"){ _, _ ->
+                
+            }
             .create()
 
         binding.btnExit.setOnClickListener {
