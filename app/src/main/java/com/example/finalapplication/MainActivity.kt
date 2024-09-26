@@ -11,6 +11,7 @@ import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
+import com.example.finalapplication.viewpager2.ViewPager2Activity
 import com.example.finalapplication.widgets.alertdialog.AlertDialogActivity
 import com.example.finalapplication.widgets.customdialog.CustomDialogActivity
 import com.example.finalapplication.widgets.dateandtime.DateAndTimeActivity
@@ -133,6 +134,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnBottomNavigationMenu.setOnClickListener {
             Intent(this, BottomToolBarMenuActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnViewPager.setOnClickListener {
+            Intent(this, ViewPager2Activity::class.java).also {
                 startActivity(it)
             }
         }
