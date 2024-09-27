@@ -13,6 +13,9 @@
         android:theme="@style/Base.Theme.FinalApplication"
         tools:targetApi="31">
         <activity
+            android:name=".slidermenu.SliderMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".layout.gridlayout.GridLayoutNextActivity"
             android:exported="false" />
         <activity
