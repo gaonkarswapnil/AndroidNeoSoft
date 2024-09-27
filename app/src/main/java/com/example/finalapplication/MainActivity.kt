@@ -9,6 +9,7 @@ import com.example.finalapplication.bottomtoolbarmenu.BottomToolBarMenuActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
+import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
 import com.example.finalapplication.viewpager2.ViewPager2Activity
@@ -140,6 +141,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnViewPager.setOnClickListener {
             Intent(this, ViewPager2Activity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnGridLayout.setOnClickListener {
+            Intent(this, GridLayoutActivity::class.java).also {
                 startActivity(it)
             }
         }
