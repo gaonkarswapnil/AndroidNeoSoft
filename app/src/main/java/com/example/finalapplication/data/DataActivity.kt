@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.finalapplication.R
 import com.example.finalapplication.data.activity2activity.DataPassingActivity
+import com.example.finalapplication.data.activity2fragment.DataSendingActivity
 import com.example.finalapplication.databinding.ActivityDataBinding
 
 class DataActivity : AppCompatActivity() {
@@ -27,6 +28,20 @@ class DataActivity : AppCompatActivity() {
             Intent(this, DataPassingActivity::class.java).also {
                 startActivity(it)
             }
+        }
+
+        binding.btnActivity2Fragment.setOnClickListener {
+            Intent(this, DataSendingActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnFragment2Activity.setOnClickListener {
+
+        }
+
+        binding.btnFragment2Fragment.setOnClickListener {
+
         }
     }
 }
