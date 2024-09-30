@@ -37,14 +37,6 @@ class DataSendingFragment : Fragment() {
 
         btn.setOnClickListener {
             val msg = view.findViewById<EditText>(R.id.etEditText).text.toString()
-//            val bundle = Bundle().apply {
-//                putString("EXTRA_MSG", msg)
-//            }
-//            Intent(requireContext(), RecievingDataActivity::class.java).also {
-//                it.putExtras(bundle)
-//                startActivity(it)
-//            }
-
             myInterface.transferredMsg(msg)
         }
 
