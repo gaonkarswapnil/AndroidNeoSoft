@@ -10,6 +10,7 @@ import com.example.finalapplication.R
 import com.example.finalapplication.data.activity2activity.DataPassingActivity
 import com.example.finalapplication.data.activity2fragment.DataSendingActivity
 import com.example.finalapplication.data.fragment2activity.RecievingDataActivity
+import com.example.finalapplication.data.fragment2fragment.FragmentActivity
 import com.example.finalapplication.databinding.ActivityDataBinding
 
 class DataActivity : AppCompatActivity() {
@@ -44,7 +45,9 @@ class DataActivity : AppCompatActivity() {
         }
 
         binding.btnFragment2Fragment.setOnClickListener {
-
+            Intent(this, FragmentActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 }
