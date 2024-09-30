@@ -27,6 +27,7 @@ class SliderMenuActivity : AppCompatActivity() {
         val drawerLayout = binding.main
         toggle = ActionBarDrawerToggle(this,drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
