@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalapplication.activitylifecycle.ActivityLifeCycleActivity
 import com.example.finalapplication.bottomtoolbarmenu.BottomToolBarMenuActivity
+import com.example.finalapplication.data.DataActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
@@ -154,6 +155,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnSliderMenu.setOnClickListener {
             Intent(this, SliderMenuActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnDataSharing.setOnClickListener {
+            Intent(this, DataActivity::class.java).also {
                 startActivity(it)
             }
         }
