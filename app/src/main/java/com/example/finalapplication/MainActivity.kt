@@ -11,6 +11,7 @@ import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
 import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
+import com.example.finalapplication.sharedpeferences.SharedPeferencesActivity
 import com.example.finalapplication.slidermenu.SliderMenuActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
@@ -161,6 +162,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnDataSharing.setOnClickListener {
             Intent(this, DataActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnSavePref.setOnClickListener {
+            Intent(this, SharedPeferencesActivity::class.java).also {
                 startActivity(it)
             }
         }
