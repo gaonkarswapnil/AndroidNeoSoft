@@ -11,6 +11,8 @@ import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
 import com.example.finalapplication.jsondata.ReadJsonActivity
+import com.example.finalapplication.jsondata.jsonarray.ReadJSONArrayActivity
+import com.example.finalapplication.jsondata.jsondataquiz.QuizJsonActivity
 import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
 import com.example.finalapplication.sharedpeferences.SharedPeferencesActivity
 import com.example.finalapplication.slidermenu.SliderMenuActivity
@@ -175,6 +177,18 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnJSONFileReader.setOnClickListener {
             Intent(this, ReadJsonActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnJSONArrayReader.setOnClickListener {
+            Intent(this, ReadJSONArrayActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnJSONQuizReader.setOnClickListener {
+            Intent(this, QuizJsonActivity::class.java).also {
                 startActivity(it)
             }
         }

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Jupiter", "Saturn", "Mars"],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "What is the boiling point of water?",
+    "options": ["100°C", "90°C", "80°C", "120°C"],
+    "answer": "100°C"
+  },
+  {
+    "question": "Which element has the chemical symbol 'O'?",
+    "options": ["Oxygen", "Gold", "Silver", "Iron"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": ["Charles Dickens", "Mark Twain", "William Shakespeare", "Leo Tolstoy"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yen", "Won", "Dollar", "Euro"],
+    "answer": "Yen"
+  },
+  {
+    "question": "How many continents are there?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Endoplasmic reticulum"],
+    "answer": "Mitochondria"
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "answer": "Pacific Ocean"
+  }
+]

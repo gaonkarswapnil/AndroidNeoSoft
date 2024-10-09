@@ -246,6 +246,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnSavePref" />
 
+        <Button
+            android:id="@+id/btnJSONArrayReader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="JSON Array Reader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnJSONFileReader" />
+
+        <Button
+            android:id="@+id/btnJSONQuizReader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="JSON Quiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnJSONArrayReader" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,14 +4,17 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-23T12:00:26.355821536Z">
+        <DropdownSelection timestamp="2024-10-07T06:22:15.859599156Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=KFGUKZFEXKU8RKEU" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/home/neosoft/.android/avd/Pixel_2_API_25.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="QuizJsonActivity">
+        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>

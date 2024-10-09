@@ -13,6 +13,18 @@
         android:theme="@style/Base.Theme.FinalApplication"
         tools:targetApi="31">
         <activity
+            android:name=".jsondata.jsondataquiz.FetchRecyclerViewData"
+            android:exported="false" />
+        <activity
+            android:name=".jsondata.jsondataquiz.QuizJsonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jsondata.jsonarray.ReadJSONArrayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".widgets.seekbar.SeekBarActivity"
+            android:exported="false" />
+        <activity
             android:name=".jsondata.ReadJsonActivity"
             android:exported="false" />
         <activity
