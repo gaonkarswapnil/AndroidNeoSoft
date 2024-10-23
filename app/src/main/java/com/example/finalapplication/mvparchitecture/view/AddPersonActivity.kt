@@ -1,5 +1,6 @@
 package com.example.finalapplication.mvparchitecture.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -34,7 +35,10 @@ class AddPersonActivity : AppCompatActivity(), AddPersonView {
         }
 
         binding.btnShow.setOnClickListener {
-            Toast.makeText(this, "Next Activity", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "Next Activity", Toast.LENGTH_SHORT).show()
+            Intent(this, DisplayPersonActivity::class.java).also {
+                startActivity(it)
+            }
         }
 
     }

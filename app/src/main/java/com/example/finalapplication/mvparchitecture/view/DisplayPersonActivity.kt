@@ -31,14 +31,20 @@ class DisplayPersonActivity : AppCompatActivity(), DisplayPersonView {
 
         presenter = DisplayPersonPresenter(this, PersonModel(database.personDao()))
 
-//        personList= presenter.loadPersons()
-        val adapter = PersonAdapter(database.personDao().getPersonData())
-        binding.rvPersonData.adapter = adapter
+        presenter.loadPersons()
+//        val adapter = PersonAdapter(database.personDao().getPersonData())
+//        binding.rvPersonData.adapter = adapter
         binding.rvPersonData.layoutManager = LinearLayoutManager(this)
+
+
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
 
     }
 
     override fun displayPerson(persons: List<Person>) {
-        TODO("Not yet implemented")
+        val adapter = PersonAdapter(persons)
+        binding.rvPersonData.adapter = adapter
     }
 }
