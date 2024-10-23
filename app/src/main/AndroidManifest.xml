@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,36 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.FinalApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".mvparchitecture.view.DisplayPersonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvparchitecture.view.AddPersonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logintask.EditDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logintask.DisplayDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logintask.RegistrationTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logintask.LoginTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".roomdb.DemoRoomDBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.IntentServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inkapi.BasicHandwritingRecognizer"
+            android:exported="false" />
+        <activity
+            android:name=".jsondata.displayjson.SimpleJSONFetchActivity"
+            android:exported="false" />
         <activity
             android:name=".jsondata.jsondataquiz.FetchRecyclerViewData"
             android:exported="false" />
@@ -123,6 +156,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.MyIntentService" />
     </application>
 
 </manifest>

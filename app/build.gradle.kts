@@ -1,11 +1,22 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
+
+    kotlin("plugin.serialization") version "1.8.0"
 }
 
 android {
     namespace = "com.example.finalapplication"
     compileSdk = 34
+
+    packaging {
+        resources {
+            // Exclude duplicate LICENSE files
+            excludes += mutableSetOf("**/LICENSE.md", "**/LICENSE-notice.md")
+        }
+    }
+
 
     defaultConfig {
         applicationId = "com.example.finalapplication"
@@ -46,10 +57,35 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.junit.jupiter)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 //    implementation(libs.androidx.recyclerview)
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("com.google.android.material:material:1.12.0-alpha04")
+
+    implementation("com.google.mlkit:digital-ink-recognition:18.1.0")
+
+
+//    implementation("com.google.mlkit:vision:2.6.0")
+//    implementation("com.google.mlkit:digitalink:2.6.0")
+
+//    implementation("com.google.mlkit:digitalink:latest_version")
+
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+
+
+    testImplementation("junit:junit:4.13.2")
 }

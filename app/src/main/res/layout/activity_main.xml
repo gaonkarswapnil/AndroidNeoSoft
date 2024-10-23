@@ -266,6 +266,66 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnJSONArrayReader" />
 
+        <Button
+            android:id="@+id/btnNestedJSONReader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nested JSON Reader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnJSONQuizReader" />
+
+        <Button
+            android:id="@+id/btnIntentServices"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Intent Services"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnNestedJSONReader" />
+
+        <Button
+            android:id="@+id/btnINKAPI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="INK API"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnIntentServices" />
+
+        <Button
+            android:id="@+id/btnUserDatabase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="User Database"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnINKAPI" />
+
+        <Button
+            android:id="@+id/btnUserLoginDatabaseTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="User Login Database"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUserDatabase" />
+
+        <Button
+            android:id="@+id/btnMVP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MVP Architecture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUserLoginDatabaseTask" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

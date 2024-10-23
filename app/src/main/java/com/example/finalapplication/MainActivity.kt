@@ -10,10 +10,17 @@ import com.example.finalapplication.data.DataActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
+import com.example.finalapplication.inkapi.BasicHandwritingRecognizer
 import com.example.finalapplication.jsondata.ReadJsonActivity
+import com.example.finalapplication.jsondata.displayjson.SimpleJSONFetchActivity
 import com.example.finalapplication.jsondata.jsonarray.ReadJSONArrayActivity
 import com.example.finalapplication.jsondata.jsondataquiz.QuizJsonActivity
 import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
+import com.example.finalapplication.logintask.LoginTaskActivity
+import com.example.finalapplication.mvparchitecture.presenter.AddPersonPresenter
+import com.example.finalapplication.mvparchitecture.view.AddPersonActivity
+import com.example.finalapplication.roomdb.DemoRoomDBActivity
+import com.example.finalapplication.service.IntentServiceActivity
 import com.example.finalapplication.sharedpeferences.SharedPeferencesActivity
 import com.example.finalapplication.slidermenu.SliderMenuActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
@@ -192,5 +199,42 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        binding.btnNestedJSONReader.setOnClickListener {
+            Intent(this, SimpleJSONFetchActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnIntentServices.setOnClickListener {
+            Intent(this, IntentServiceActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnINKAPI.setOnClickListener {
+            Intent(this, BasicHandwritingRecognizer::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnUserDatabase.setOnClickListener {
+            Intent(this, DemoRoomDBActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnUserLoginDatabaseTask.setOnClickListener {
+            Intent(this, LoginTaskActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnMVP.setOnClickListener {
+            Intent(this, AddPersonActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
     }
 }
