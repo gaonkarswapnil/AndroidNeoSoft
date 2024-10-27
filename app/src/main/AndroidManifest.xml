@@ -16,6 +16,18 @@
         android:theme="@style/Base.Theme.FinalApplication"
         tools:targetApi="31">
         <activity
+            android:name=".weatherappgson.WeatherReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gson.GSONParsingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onsavedinstancestate.OnSavedInstanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".realm.RealmActivity"
+            android:exported="false" />
+        <activity
             android:name=".mvparchitecture.view.DisplayPersonActivity"
             android:exported="false" />
         <activity

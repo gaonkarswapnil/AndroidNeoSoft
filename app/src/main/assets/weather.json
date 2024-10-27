@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 77.209,
+    "lat": 28.6139
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 30.5,
+    "feels_like": 34.5,
+    "temp_min": 28.0,
+    "temp_max": 32.0,
+    "pressure": 1012,
+    "humidity": 65
+  },
+  "visibility": 4000,
+  "wind": {
+    "speed": 3.1,
+    "deg": 120
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1634151575,
+  "sys": {
+    "type": 1,
+    "id": 9217,
+    "country": "IN",
+    "sunrise": 1634136874,
+    "sunset": 1634180132
+  },
+  "timezone": 19800,
+  "id": 1264527,
+  "name": "New Delhi",
+  "cod": 200
+}

@@ -87,5 +87,11 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
 
-    testImplementation("junit:junit:4.13.2")
+    implementation("io.realm:realm-android-library:10.10.1")
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation("com.google.code.gson:gson:2.10.1")
+
+
+
 }

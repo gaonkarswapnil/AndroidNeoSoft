@@ -326,6 +326,47 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnUserLoginDatabaseTask" />
 
+        <Button
+            android:id="@+id/btnTestRealm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Realm Basic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMVP" />
+
+        <Button
+            android:id="@+id/btnOnSavedInstance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="On Saved Instance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMVP" />
+
+
+        <Button
+            android:id="@+id/btnGSONParsing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="GSON Parsing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOnSavedInstance" />
+
+        <Button
+            android:id="@+id/btnWeatherReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Weather GSON Parsing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGSONParsing" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

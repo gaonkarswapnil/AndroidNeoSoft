@@ -10,6 +10,7 @@ import com.example.finalapplication.data.DataActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
+import com.example.finalapplication.gson.GSONParsingActivity
 import com.example.finalapplication.inkapi.BasicHandwritingRecognizer
 import com.example.finalapplication.jsondata.ReadJsonActivity
 import com.example.finalapplication.jsondata.displayjson.SimpleJSONFetchActivity
@@ -19,6 +20,8 @@ import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
 import com.example.finalapplication.logintask.LoginTaskActivity
 import com.example.finalapplication.mvparchitecture.presenter.AddPersonPresenter
 import com.example.finalapplication.mvparchitecture.view.AddPersonActivity
+import com.example.finalapplication.onsavedinstancestate.OnSavedInstanceActivity
+import com.example.finalapplication.realm.RealmActivity
 import com.example.finalapplication.roomdb.DemoRoomDBActivity
 import com.example.finalapplication.service.IntentServiceActivity
 import com.example.finalapplication.sharedpeferences.SharedPeferencesActivity
@@ -26,6 +29,8 @@ import com.example.finalapplication.slidermenu.SliderMenuActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
 import com.example.finalapplication.viewpager2.ViewPager2Activity
+import com.example.finalapplication.weatherappgson.WeatherReport
+import com.example.finalapplication.weatherappgson.WeatherReportActivity
 import com.example.finalapplication.widgets.alertdialog.AlertDialogActivity
 import com.example.finalapplication.widgets.customdialog.CustomDialogActivity
 import com.example.finalapplication.widgets.dateandtime.DateAndTimeActivity
@@ -236,5 +241,28 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnTestRealm.setOnClickListener {
+            Intent(this, RealmActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnOnSavedInstance.setOnClickListener {
+            Intent(this, OnSavedInstanceActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnGSONParsing.setOnClickListener {
+            Intent(this, GSONParsingActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnWeatherReport.setOnClickListener {
+            Intent(this, WeatherReportActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 }

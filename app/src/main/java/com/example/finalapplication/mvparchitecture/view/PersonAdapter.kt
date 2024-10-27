@@ -12,6 +12,8 @@ import kotlin.math.truncate
 
 class PersonAdapter(private var persons: List<Person>): RecyclerView.Adapter<PersonAdapter.PersonViewHolder>() {
 
+    private var filteredList: List<Person> = persons
+
     inner class PersonViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
@@ -25,9 +27,17 @@ class PersonAdapter(private var persons: List<Person>): RecyclerView.Adapter<Per
 
     override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
         holder.itemView.also {
-            it.findViewById<TextView>(R.id.tvPersonName).text = persons[position].name;
+            it.findViewById<TextView>(R.id.tvPersonName).text = persons[position].name
             it.findViewById<TextView>(R.id.tvPersonAge).text = persons[position].age.toString()
         }
     }
 
+    fun filter(query: String) {
+        filteredList = if (query.isEmpty()) {
+            persons // If query is empty, show all items
+        } else {
+            persons.filter { it.name.contains(query, ignoreCase = true) } // Filter based on the query
+        }
+        notifyDataSetChanged()
+    }
 }

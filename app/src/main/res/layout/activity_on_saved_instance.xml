@@ -5,40 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mvparchitecture.view.DisplayPersonActivity">
+    tools:context=".onsavedinstancestate.OnSavedInstanceActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/svSearch"
+    <EditText
+        android:id="@+id/etTempData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCounter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        android:queryHint="Search here"
-        android:iconifiedByDefault="false"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPersonData"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCounter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/svSearch" />
+        app:layout_constraintTop_toBottomOf="@+id/etTempData" />
 
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="COUNTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCounter" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
