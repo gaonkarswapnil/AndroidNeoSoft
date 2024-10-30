@@ -8,6 +8,7 @@ import com.example.finalapplication.activitylifecycle.ActivityLifeCycleActivity
 import com.example.finalapplication.bottomtoolbarmenu.BottomToolBarMenuActivity
 import com.example.finalapplication.data.DataActivity
 import com.example.finalapplication.databinding.ActivityMainBinding
+import com.example.finalapplication.databinding.DataBindingActivity
 import com.example.finalapplication.fragment.FragmentActivity
 import com.example.finalapplication.fragmentlifecycle.FragmentLifeCycleActivity
 import com.example.finalapplication.gson.GSONParsingActivity
@@ -283,6 +284,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnLiveData.setOnClickListener {
             Intent(this, LiveDataActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnDataBinding.setOnClickListener {
+            Intent(this, DataBindingActivity::class.java).also {
                 startActivity(it)
             }
         }
