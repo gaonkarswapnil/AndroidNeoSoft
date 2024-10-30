@@ -22,6 +22,7 @@ import com.example.finalapplication.livedata.LiveDataActivity
 import com.example.finalapplication.logintask.LoginTaskActivity
 import com.example.finalapplication.mvparchitecture.presenter.AddPersonPresenter
 import com.example.finalapplication.mvparchitecture.view.AddPersonActivity
+import com.example.finalapplication.mvvm.view.MVVMSampleActivity
 import com.example.finalapplication.onsavedinstancestate.OnSavedInstanceActivity
 import com.example.finalapplication.realm.RealmActivity
 import com.example.finalapplication.retrofit.RetrofitActivity
@@ -290,6 +291,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnDataBinding.setOnClickListener {
             Intent(this, DataBindingActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnMVVMExample.setOnClickListener {
+            Intent(this, MVVMSampleActivity::class.java).also {
                 startActivity(it)
             }
         }

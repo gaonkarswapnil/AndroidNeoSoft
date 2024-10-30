@@ -16,6 +16,9 @@
         android:theme="@style/Base.Theme.FinalApplication"
         tools:targetApi="31">
         <activity
+            android:name=".mvvm.view.MVVMSampleActivity"
+            android:exported="false" />
+        <activity
             android:name=".databinding.DataBindingActivity"
             android:exported="false" />
         <activity
