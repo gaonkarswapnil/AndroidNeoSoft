@@ -17,17 +17,21 @@ import com.example.finalapplication.jsondata.displayjson.SimpleJSONFetchActivity
 import com.example.finalapplication.jsondata.jsonarray.ReadJSONArrayActivity
 import com.example.finalapplication.jsondata.jsondataquiz.QuizJsonActivity
 import com.example.finalapplication.layout.gridlayout.GridLayoutActivity
+import com.example.finalapplication.livedata.LiveDataActivity
 import com.example.finalapplication.logintask.LoginTaskActivity
 import com.example.finalapplication.mvparchitecture.presenter.AddPersonPresenter
 import com.example.finalapplication.mvparchitecture.view.AddPersonActivity
 import com.example.finalapplication.onsavedinstancestate.OnSavedInstanceActivity
 import com.example.finalapplication.realm.RealmActivity
+import com.example.finalapplication.retrofit.RetrofitActivity
+import com.example.finalapplication.retrofitpost.RetrofitPostActivity
 import com.example.finalapplication.roomdb.DemoRoomDBActivity
 import com.example.finalapplication.service.IntentServiceActivity
 import com.example.finalapplication.sharedpeferences.SharedPeferencesActivity
 import com.example.finalapplication.slidermenu.SliderMenuActivity
 import com.example.finalapplication.toolbarmenu.ToolBarMenuActivity
 import com.example.finalapplication.twoactivityinteraction.FirstActivityLifeCycleActivity
+import com.example.finalapplication.viewmodel.IncrementActivity
 import com.example.finalapplication.viewpager2.ViewPager2Activity
 import com.example.finalapplication.weatherappgson.WeatherReport
 import com.example.finalapplication.weatherappgson.WeatherReportActivity
@@ -261,6 +265,24 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnWeatherReport.setOnClickListener {
             Intent(this, WeatherReportActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnRetroFit.setOnClickListener {
+            Intent(this, RetrofitActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnViewModel.setOnClickListener {
+            Intent(this, IncrementActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnLiveData.setOnClickListener {
+            Intent(this, LiveDataActivity::class.java).also {
                 startActivity(it)
             }
         }
