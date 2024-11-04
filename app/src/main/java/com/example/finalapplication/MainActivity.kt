@@ -26,6 +26,7 @@ import com.example.finalapplication.mvvm.view.MVVMSampleActivity
 import com.example.finalapplication.onsavedinstancestate.OnSavedInstanceActivity
 import com.example.finalapplication.realm.RealmActivity
 import com.example.finalapplication.retrofit.RetrofitActivity
+import com.example.finalapplication.retrofitmvvm.view.RegistrationActivity
 import com.example.finalapplication.retrofitpost.RetrofitPostActivity
 import com.example.finalapplication.roomdb.DemoRoomDBActivity
 import com.example.finalapplication.service.IntentServiceActivity
@@ -297,6 +298,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnMVVMExample.setOnClickListener {
             Intent(this, MVVMSampleActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnRetroFitRegistration.setOnClickListener {
+            Intent(this, RegistrationActivity::class.java).also {
                 startActivity(it)
             }
         }
